@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>3个月拿下驾照，开上问界M6</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            anchor: {
+              bg: '#F0F4F8',
+              card: 'rgba(255, 255, 255, 0.88)',
+              primary: '#3B82F6',
+              primaryLight: '#DBEAFE',
+              success: '#10B981',
+              successLight: '#D1FAE5',
+              gold: '#F59E0B',
+              goldLight: '#FEF3C7',
+              gray: '#9CA3AF',
+              grayLight: '#F3F4F6',
+              text: '#1F2937',
+              textSecondary: '#6B7280'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { -webkit-tap-highlight-color: transparent; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(180deg, #F0F4F8 0%, #E8EEF4 30%, #F5F7FA 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.02);
+    }
+    .milestone-gold {
+      background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+      border: 2px solid #F59E0B;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.25);
+    }
+    .milestone-current {
+      background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%);
+      border: 2px solid #3B82F6;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 4px 14px rgba(59, 130, 246, 0.2);
+      animation: gentlePulse 2s ease-in-out infinite;
+    }
+    .milestone-locked {
+      background: rgba(243, 244, 246, 0.8);
+      border: 1px solid rgba(229, 231, 235, 0.8);
+    }
+    @keyframes gentlePulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 4px 14px rgba(59, 130, 246, 0.2); }
+      50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.6), 0 4px 18px rgba(59, 130, 246, 0.3); }
+    }
+    .slide-in {
+      animation: slideIn 0.5s ease-out;
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .anchor-btn {
+      transition: all 0.25s ease;
+    }
+    .anchor-btn:active {
+      transform: scale(0.97);
+    }
+    .quote-mark {
+      font-size: 4rem;
+      line-height: 1;
+      color: #DBEAFE;
+      font-family: Georgia, serif;
+    }
+    .subtask-checkbox {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #CBD5E1;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+    .subtask-checkbox:checked {
+      background-color: #3B82F6;
+      border-color: #3B82F6;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+      background-size: 12px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .subtask-checkbox:checked + span {
+      text-decoration: line-through;
+      color: #9CA3AF;
+    }
+  </style>
+</head>
+<body class="antialiased pb-8">
+  <!-- Header -->
+  <div class="glass-card rounded-b-3xl px-6 pt-12 pb-6">
+    <div class="flex items-center justify-between mb-4">
+      <a href="index.html" class="flex items-center gap-1 text-gray-500 hover:text-anchor-primary transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        <span class="text-sm font-medium">返回目标地图</span>
+      </a>
+    </div>
+    <div class="text-center">
+      <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-1.5 rounded-full mb-4">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2v20M2 12h20"/>
+        </svg>
+        <span class="text-sm font-medium">已踏上旅程 0 天</span>
+      </div>
+      <h1 class="text-2xl font-bold text-gray-800 leading-tight">3个月拿下驾照，开上问界M6</h1>
+    </div>
+  </div>
+
+  <!-- Current Phase Card -->
+  <div class="glass-card rounded-2xl p-5 mx-4 mt-4 bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-100 slide-in">
+    <div class="flex items-start gap-4">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-500 flex items-center justify-center shadow-lg shadow-blue-200 flex-shrink-0">
+        <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2v20M2 12h20"/>
+        </svg>
+      </div>
+      <div class="flex-1">
+        <p class="text-gray-500 text-sm mb-1">当前阶段</p>
+        <h2 class="text-xl font-bold text-gray-800 mb-2">理论筑基期</h2>
+        <div class="inline-flex items-center gap-2 bg-white/60 px-3 py-1 rounded-lg mb-3">
+          <svg class="w-4 h-4 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          <span class="text-sm font-medium text-blue-600">本阶段已进行 0 天</span>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed">锚点已设定，方向已确认。不急于赶路，重要的是一直在路上。</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Milestone 1 -->
+  <div class="milestone-current rounded-2xl p-5 mx-4 mt-4 slide-in" style="animation-delay: 0.0s">
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-xl bg-blue-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200">
+        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <div class="flex-1">
+        <div class="flex items-center gap-2 mb-1"><span class="text-xs font-medium text-blue-600 bg-white/70 px-2 py-0.5 rounded">当前里程碑</span></div>
+        <h3 class="text-lg font-bold text-blue-800 mb-1">通过科目一</h3>
+        <p class="text-sm text-blue-700 mb-3">建立驾驶知识框架，掌握交通法规和标志标线</p>
+        
+        <div class="bg-white/60 rounded-xl p-4 mt-4">
+          <p class="text-xs font-medium text-gray-500 mb-3 uppercase tracking-wider">小任务</p>
+          <div class="space-y-2">
+            
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="subtask-checkbox" data-milestone="0" data-task="0" >
+              <span class="text-sm text-gray-700">下载驾考宝典APP，注册账号</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="subtask-checkbox" data-milestone="0" data-task="1" >
+              <span class="text-sm text-gray-700">每天刷100道题，坚持2周</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="subtask-checkbox" data-milestone="0" data-task="2" >
+              <span class="text-sm text-gray-700">重点攻克标志标线和交警手势</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="subtask-checkbox" data-milestone="0" data-task="3" >
+              <span class="text-sm text-gray-700">整理错题笔记，反复复习</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="subtask-checkbox" data-milestone="0" data-task="4" >
+              <span class="text-sm text-gray-700">科目一考试满分通过（90分以上）</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Milestone 2 -->
+  <div class="milestone-locked rounded-2xl p-5 mx-4 mt-4 slide-in" style="animation-delay: 0.1s">
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-xl bg-gray-300 flex items-center justify-center flex-shrink-0">
+        <span class="text-lg font-bold text-white">2</span>
+      </div>
+      <div class="flex-1">
+        
+        <h3 class="text-lg font-bold text-gray-400 mb-1">科目二五项技能熟练</h3>
+        <p class="text-sm text-gray-500 mb-3">倒车入库不压线，场地考试一次通过</p>
+        
+        <div class="bg-gray-100/50 rounded-xl p-4 opacity-60 mt-4">
+          <p class="text-xs font-medium text-gray-400 mb-3 uppercase tracking-wider">小任务</p>
+          <div class="space-y-2">
+            
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">和驾校约课，每周3-4次练车</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">掌握倒车入库：右打死→回正→左打死</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">掌握侧方停车：后视镜下沿对齐库线</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">掌握坡道定点：离合半联动找感觉</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">形成自己的点位手册</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">科目二一次通过</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Milestone 3 -->
+  <div class="milestone-locked rounded-2xl p-5 mx-4 mt-4 slide-in" style="animation-delay: 0.2s">
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-xl bg-gray-300 flex items-center justify-center flex-shrink-0">
+        <span class="text-lg font-bold text-white">3</span>
+      </div>
+      <div class="flex-1">
+        
+        <h3 class="text-lg font-bold text-gray-400 mb-1">科目三路考通过</h3>
+        <p class="text-sm text-gray-500 mb-3">敢上路、会应变，培养防御性驾驶意识</p>
+        
+        <div class="bg-gray-100/50 rounded-xl p-4 opacity-60 mt-4">
+          <p class="text-xs font-medium text-gray-400 mb-3 uppercase tracking-wider">小任务</p>
+          <div class="space-y-2">
+            
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">练习灯光模拟操作</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">实际道路训练：变道、超车、掉头</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">掌握靠边停车技巧</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">养成斑马线/学校/公交站点刹习惯</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">科目三通过</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Milestone 4 -->
+  <div class="milestone-locked rounded-2xl p-5 mx-4 mt-4 slide-in" style="animation-delay: 0.30000000000000004s">
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-xl bg-gray-300 flex items-center justify-center flex-shrink-0">
+        <span class="text-lg font-bold text-white">4</span>
+      </div>
+      <div class="flex-1">
+        
+        <h3 class="text-lg font-bold text-gray-400 mb-1">拿下驾照，准备迎接问界M6</h3>
+        <p class="text-sm text-gray-500 mb-3">完成科目四，开启自驾新生活</p>
+        
+        <div class="bg-gray-100/50 rounded-xl p-4 opacity-60 mt-4">
+          <p class="text-xs font-medium text-gray-400 mb-3 uppercase tracking-wider">小任务</p>
+          <div class="space-y-2">
+            
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">科目四刷题备考</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">拿下驾照！</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">了解问界M6的操作逻辑和辅助驾驶</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">找老司机陪同熟悉新车</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">完成首次独立驾驶短途游</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why It Matters Button -->
+  <button id="whyBtn" onclick="toggleWhy()" class="glass-card rounded-xl p-4 mx-4 mt-6 flex items-center gap-3 anchor-btn bg-gradient-to-r from-rose-50 to-pink-50 border-rose-100 w-[calc(100%-2rem)]">
+    <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0">
+      <svg class="w-5 h-5 text-rose-500" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+      </svg>
+    </div>
+    <div class="flex-1 text-left">
+      <p class="font-medium text-gray-800">回看初心</p>
+      <p class="text-sm text-gray-500">当初为什么出发</p>
+    </div>
+    <svg class="w-5 h-5 text-rose-300 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="10"/>
+      <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+    </svg>
+  </button>
+
+  <!-- Why It Matters Panel (hidden by default) -->
+  <div id="whyPanel" class="hidden glass-card rounded-2xl p-6 mx-4 mt-6 bg-gradient-to-br from-rose-50 to-pink-50 border-rose-100">
+    <div class="flex items-center justify-between mb-4">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-rose-500" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+        <h3 class="font-bold text-gray-800">回看初心</h3>
+      </div>
+      <button onclick="toggleWhy()" class="text-rose-400 hover:text-rose-600">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="mb-4">
+      <span class="quote-mark">"</span>
+      <p class="text-lg font-medium text-gray-800 leading-relaxed -mt-6">因为好喜欢问界M6，想开上自己喜欢的车，想开车和朋友家人去更远的地方看更大的世界</p>
+    </div>
+    <div class="bg-white/60 rounded-xl p-4">
+      <p class="text-sm text-gray-600 leading-relaxed">用户说：我因为好喜欢问界 M6，想开上自己喜欢的车，想开车和朋友家人去更远的地方 看更大的世界！已经报名驾校，准备开始3个月的学车旅程</p>
+    </div>
+  </div>
+
+  <!-- Estimated Duration -->
+  <div class="text-center mt-6 px-4">
+    <p class="text-gray-400 text-sm">预计旅程长度：3个月</p>
+  </div>
+
+  <script>
+    function toggleWhy() {
+      const btn = document.getElementById('whyBtn');
+      const panel = document.getElementById('whyPanel');
+      if (panel.classList.contains('hidden')) {
+        panel.classList.remove('hidden');
+        btn.classList.add('hidden');
+      } else {
+        panel.classList.add('hidden');
+        btn.classList.remove('hidden');
+      }
+    }
+
+    // Save checkbox state to localStorage
+    document.querySelectorAll('.subtask-checkbox').forEach((checkbox) => {
+      const milestone = checkbox.dataset.milestone;
+      const task = checkbox.dataset.task;
+      const key = 'subtask-' + milestone + '-' + task;
+      
+      checkbox.checked = localStorage.getItem(key) === 'true';
+      
+      checkbox.addEventListener('change', () => {
+        localStorage.setItem(key, checkbox.checked);
+      });
+    });
+  </script>
+</body>
+</html>

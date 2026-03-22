@@ -1,0 +1,78 @@
+{
+  "title": "3个月拿下驾照，开上问界M6",
+  "slug": "driving-license",
+  "why_it_matters": "因为好喜欢问界M6，想开上自己喜欢的车，想开车和朋友家人去更远的地方看更大的世界",
+  "context_snapshot": "用户说：我因为好喜欢问界 M6，想开上自己喜欢的车，想开车和朋友家人去更远的地方 看更大的世界！已经报名驾校，准备开始3个月的学车旅程",
+  "estimated_duration": "3个月",
+  "journey_start_date": "2026-03-22T19:54:00",
+  "current_phase": {
+    "index": 0,
+    "name": "理论筑基期",
+    "start_date": "2026-03-22T19:54:00",
+    "days_in_phase": 0
+  },
+  "milestones": [
+    {
+      "title": "通过科目一",
+      "description": "建立驾驶知识框架，掌握交通法规和标志标线",
+      "phase_name": "理论筑基期",
+      "completed": false,
+      "completed_at": null,
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "1-1", "title": "下载驾考宝典APP，注册账号", "completed": false},
+        {"id": "1-2", "title": "每天刷100道题，坚持2周", "completed": false},
+        {"id": "1-3", "title": "重点攻克标志标线和交警手势", "completed": false},
+        {"id": "1-4", "title": "整理错题笔记，反复复习", "completed": false},
+        {"id": "1-5", "title": "科目一考试满分通过（90分以上）", "completed": false}
+      ]
+    },
+    {
+      "title": "科目二五项技能熟练",
+      "description": "倒车入库不压线，场地考试一次通过",
+      "phase_name": "场地打磨期",
+      "completed": false,
+      "completed_at": null,
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "2-1", "title": "和驾校约课，每周3-4次练车", "completed": false},
+        {"id": "2-2", "title": "掌握倒车入库：右打死→回正→左打死", "completed": false},
+        {"id": "2-3", "title": "掌握侧方停车：后视镜下沿对齐库线", "completed": false},
+        {"id": "2-4", "title": "掌握坡道定点：离合半联动找感觉", "completed": false},
+        {"id": "2-5", "title": "形成自己的点位手册", "completed": false},
+        {"id": "2-6", "title": "科目二一次通过", "completed": false}
+      ]
+    },
+    {
+      "title": "科目三路考通过",
+      "description": "敢上路、会应变，培养防御性驾驶意识",
+      "phase_name": "道路实战期",
+      "completed": false,
+      "completed_at": null,
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "3-1", "title": "练习灯光模拟操作", "completed": false},
+        {"id": "3-2", "title": "实际道路训练：变道、超车、掉头", "completed": false},
+        {"id": "3-3", "title": "掌握靠边停车技巧", "completed": false},
+        {"id": "3-4", "title": "养成斑马线/学校/公交站点刹习惯", "completed": false},
+        {"id": "3-5", "title": "科目三通过", "completed": false}
+      ]
+    },
+    {
+      "title": "拿下驾照，准备迎接问界M6",
+      "description": "完成科目四，开启自驾新生活",
+      "phase_name": "拿证启航期",
+      "completed": false,
+      "completed_at": null,
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "4-1", "title": "科目四刷题备考", "completed": false},
+        {"id": "4-2", "title": "拿下驾照！", "completed": false},
+        {"id": "4-3", "title": "了解问界M6的操作逻辑和辅助驾驶", "completed": false},
+        {"id": "4-4", "title": "找老司机陪同熟悉新车", "completed": false},
+        {"id": "4-5", "title": "完成首次独立驾驶短途游", "completed": false}
+      ]
+    }
+  ],
+  "stage_reports": []
+}
