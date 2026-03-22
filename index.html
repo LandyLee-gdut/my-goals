@@ -85,7 +85,7 @@
   <script type="text/babel">
     const { useState, useEffect } = React;
     
-    const GOALS_DATA = [{"title": "B站百大UP主 - 丝滑剪辑之路", "current_phase": "拆解观察期", "days_in_phase": 0, "journey_days": 0, "completed": 0, "total": 6, "status_color": "#3B82F6", "why_it_matters": "热爱表达自己，想用更高质量的视频讲好我想表达的东西", "safe_name": "b站百大up主_-_丝滑剪辑之路"}];
+    const GOALS_DATA = [{"title": "B站百大UP主 - 丝滑剪辑之路", "current_phase": "拆解观察期", "days_in_phase": 0, "journey_days": 0, "completed": 0, "total": 6, "status_color": "#3B82F6", "why_it_matters": "热爱表达自己，想用更高质量的视频讲好我想表达的东西", "safe_name": "bilibili-creator-video-editing"}];
     const TOTAL_GOALS = 1;
     const LONGEST_JOURNEY = 0;
     
@@ -93,8 +93,8 @@
       const [selectedGoal, setSelectedGoal] = useState(null);
       
       const handleGoalClick = (goal) => {
-        // Navigate to individual goal dashboard with proper encoding
-        window.location.href = encodeURIComponent(goal.safe_name) + ".html";
+        // Navigate to individual goal dashboard (English filenames, no encoding needed)
+        window.location.href = goal.safe_name + ".html";
       };
       
       return (
