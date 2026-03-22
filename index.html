@@ -93,8 +93,8 @@
       const [selectedGoal, setSelectedGoal] = useState(null);
       
       const handleGoalClick = (goal) => {
-        // Navigate to individual goal dashboard
-        window.location.href = goal.safe_name + ".html";
+        // Navigate to individual goal dashboard with proper encoding
+        window.location.href = encodeURIComponent(goal.safe_name) + ".html";
       };
       
       return (
