@@ -82,6 +82,28 @@
       color: #DBEAFE;
       font-family: Georgia, serif;
     }
+    .subtask-checkbox {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #CBD5E1;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+    .subtask-checkbox:checked {
+      background-color: #3B82F6;
+      border-color: #3B82F6;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+      background-size: 12px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .subtask-checkbox:checked + span {
+      text-decoration: line-through;
+      color: #9CA3AF;
+    }
   </style>
 </head>
 <body class="antialiased pb-8">
@@ -96,6 +118,7 @@
         <span class="text-sm font-medium">返回目标地图</span>
       </a>
     </div>
+    
     <div class="text-center">
       <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-1.5 rounded-full mb-4">
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -134,79 +157,139 @@
     </div>
   </div>
 
-  <!-- Milestone Timeline -->
-  <div class="glass-card rounded-2xl p-5 mx-4 mt-6">
-    <div class="flex items-center gap-2 mb-5">
-      <svg class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
-        <line x1="8" y1="2" x2="8" y2="18"/>
-        <line x1="16" y1="6" x2="16" y2="22"/>
-      </svg>
-      <h3 class="font-bold text-gray-800">旅程地图</h3>
+  <!-- Milestone 1: Current -->
+  <div class="milestone-current rounded-2xl p-5 mx-4 mt-6 slide-in">
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-xl bg-blue-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200">
+        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <div class="flex-1">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-medium text-blue-600 bg-white/70 px-2 py-0.5 rounded">当前里程碑</span>
+        </div>
+        <h3 class="text-lg font-bold text-blue-800 mb-1">深度拆解影视飓风及目标博主</h3>
+        <p class="text-sm text-blue-700 mb-4">逐帧分析10+视频，建立风格参考手册</p>
+        
+        <!-- Subtasks -->
+        <div class="bg-white/60 rounded-xl p-4">
+          <p class="text-xs font-medium text-gray-500 mb-3 uppercase tracking-wider">小任务</p>
+          <div class="space-y-2">
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="subtask-checkbox">
+              <span class="text-sm text-gray-700">观看影视飓风《无限进步》系列</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="subtask-checkbox">
+              <span class="text-sm text-gray-700">订阅 Peter McKinnon 频道</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="subtask-checkbox">
+              <span class="text-sm text-gray-700">逐帧分析3支影视飓风视频转场</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="subtask-checkbox">
+              <span class="text-sm text-gray-700">建立《我的风格参考手册》文档</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="subtask-checkbox">
+              <span class="text-sm text-gray-700">记录10个喜欢的转场技巧</span>
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    <div class="relative">
-      <!-- Timeline line -->
-      <div class="absolute left-5 top-8 bottom-8 w-0.5 bg-gradient-to-b from-blue-400 via-gray-200 to-gray-200"></div>
-      
-      <!-- Milestones -->
-      <div class="space-y-4">
-        <!-- Milestone 1 -->
-        <div class="milestone-current rounded-xl p-4 relative slide-in" style="animation-delay: 0.1s">
-          <div class="absolute left-3 top-4 w-4 h-4 rounded-full bg-blue-500 border-2 border-white shadow"></div>
-          <div class="pl-8">
-            <div class="flex items-center gap-2 mb-1">
-              <span class="text-xs font-medium text-blue-600 bg-blue-100 px-2 py-0.5 rounded">当前</span>
-              <h4 class="font-semibold text-gray-800">深度拆解影视飓风及目标博主</h4>
+  </div>
+
+  <!-- Milestone 2 -->
+  <div class="milestone-locked rounded-2xl p-5 mx-4 mt-4 slide-in" style="animation-delay: 0.1s">
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-xl bg-gray-300 flex items-center justify-center flex-shrink-0">
+        <span class="text-lg font-bold text-white">2</span>
+      </div>
+      <div class="flex-1">
+        <h3 class="text-lg font-bold text-gray-400 mb-1">掌握达芬奇剪辑与调色</h3>
+        <p class="text-sm text-gray-500 mb-3">建立个人LUT库和音效库，配置快捷键</p>
+        
+        <!-- Subtasks (locked) -->
+        <div class="bg-gray-100/50 rounded-xl p-4 opacity-60">
+          <p class="text-xs font-medium text-gray-400 mb-3 uppercase tracking-wider">小任务</p>
+          <div class="space-y-2">
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">下载安装 DaVinci Resolve</span>
             </div>
-            <p class="text-sm text-blue-700">逐帧分析10+视频，建立风格参考手册</p>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">观看官方入门教程</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">配置个人快捷键方案</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">收集10个LUT预设</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-4 h-4 rounded border-2 border-gray-300 flex-shrink-0"></div>
+              <span class="text-sm text-gray-400">建立分类音效库</span>
+            </div>
           </div>
         </div>
-        
-        <!-- Milestone 2 -->
-        <div class="milestone-locked rounded-xl p-4 relative slide-in" style="animation-delay: 0.2s">
-          <div class="absolute left-3 top-4 w-4 h-4 rounded-full bg-gray-300 border-2 border-white"></div>
-          <div class="pl-8">
-            <h4 class="font-semibold text-gray-400">掌握达芬奇剪辑与调色</h4>
-            <p class="text-sm text-gray-500 mt-1">建立个人LUT库和音效库，配置快捷键</p>
-          </div>
-        </div>
-        
-        <!-- Milestone 3 -->
-        <div class="milestone-locked rounded-xl p-4 relative slide-in" style="animation-delay: 0.3s">
-          <div class="absolute left-3 top-4 w-4 h-4 rounded-full bg-gray-300 border-2 border-white"></div>
-          <div class="pl-8">
-            <h4 class="font-semibold text-gray-400">像素级模仿3支作品</h4>
-            <p class="text-sm text-gray-500 mt-1">逐帧模仿影视飓风风格，建立转场招式表</p>
-          </div>
-        </div>
-        
-        <!-- Milestone 4 -->
-        <div class="milestone-locked rounded-xl p-4 relative slide-in" style="animation-delay: 0.4s">
-          <div class="absolute left-3 top-4 w-4 h-4 rounded-full bg-gray-300 border-2 border-white"></div>
-          <div class="pl-8">
-            <h4 class="font-semibold text-gray-400">建立YouTube英语输入流</h4>
-            <p class="text-sm text-gray-500 mt-1">订阅10+海外博主，建立英语表达清单</p>
-          </div>
-        </div>
-        
-        <!-- Milestone 5 -->
-        <div class="milestone-locked rounded-xl p-4 relative slide-in" style="animation-delay: 0.5s">
-          <div class="absolute left-3 top-4 w-4 h-4 rounded-full bg-gray-300 border-2 border-white"></div>
-          <div class="pl-8">
-            <h4 class="font-semibold text-gray-400">JAY_View风格融合实验</h4>
-            <p class="text-sm text-gray-500 mt-1">发布5支实验性视频，形成个人风格原型</p>
-          </div>
-        </div>
-        
-        <!-- Milestone 6 -->
-        <div class="milestone-locked rounded-xl p-4 relative slide-in" style="animation-delay: 0.6s">
-          <div class="absolute left-3 top-4 w-4 h-4 rounded-full bg-gray-300 border-2 border-white"></div>
-          <div class="pl-8">
-            <h4 class="font-semibold text-gray-400">建立复盘迭代机制</h4>
-            <p class="text-sm text-gray-500 mt-1">每10支视频数据复盘，持续优化风格</p>
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Milestone 3 -->
+  <div class="milestone-locked rounded-2xl p-5 mx-4 mt-4 slide-in" style="animation-delay: 0.2s">
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-xl bg-gray-300 flex items-center justify-center flex-shrink-0">
+        <span class="text-lg font-bold text-white">3</span>
+      </div>
+      <div class="flex-1">
+        <h3 class="text-lg font-bold text-gray-400 mb-1">像素级模仿3支作品</h3>
+        <p class="text-sm text-gray-500 mb-3">逐帧模仿影视飓风风格，建立转场招式表</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Milestone 4 -->
+  <div class="milestone-locked rounded-2xl p-5 mx-4 mt-4 slide-in" style="animation-delay: 0.3s">
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-xl bg-gray-300 flex items-center justify-center flex-shrink-0">
+        <span class="text-lg font-bold text-white">4</span>
+      </div>
+      <div class="flex-1">
+        <h3 class="text-lg font-bold text-gray-400 mb-1">建立YouTube英语输入流</h3>
+        <p class="text-sm text-gray-500 mb-3">订阅10+海外博主，建立英语表达清单</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Milestone 5 -->
+  <div class="milestone-locked rounded-2xl p-5 mx-4 mt-4 slide-in" style="animation-delay: 0.4s">
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-xl bg-gray-300 flex items-center justify-center flex-shrink-0">
+        <span class="text-lg font-bold text-white">5</span>
+      </div>
+      <div class="flex-1">
+        <h3 class="text-lg font-bold text-gray-400 mb-1">JAY_View风格融合实验</h3>
+        <p class="text-sm text-gray-500 mb-3">发布5支实验性视频，形成个人风格原型</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Milestone 6 -->
+  <div class="milestone-locked rounded-2xl p-5 mx-4 mt-4 slide-in" style="animation-delay: 0.5s">
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-xl bg-gray-300 flex items-center justify-center flex-shrink-0">
+        <span class="text-lg font-bold text-white">6</span>
+      </div>
+      <div class="flex-1">
+        <h3 class="text-lg font-bold text-gray-400 mb-1">建立复盘迭代机制</h3>
+        <p class="text-sm text-gray-500 mb-3">每10支视频数据复盘，持续优化风格</p>
       </div>
     </div>
   </div>
@@ -244,10 +327,12 @@
         </svg>
       </button>
     </div>
+    
     <div class="mb-4">
       <span class="quote-mark">"</span>
       <p class="text-lg font-medium text-gray-800 leading-relaxed -mt-6">热爱表达自己，想用更高质量的视频讲好我想表达的东西</p>
     </div>
+    
     <div class="bg-white/60 rounded-xl p-4">
       <p class="text-sm text-gray-600 leading-relaxed">用户已在B站运营JAY_View频道，专注数码电子产品分享。目标学习影视飓风的丝滑剪辑风格和抖音快节奏风格，同时借YouTube学习提高英语。初心是热爱表达，追求高质量视频创作。</p>
     </div>
@@ -270,6 +355,16 @@
         btn.classList.remove('hidden');
       }
     }
+
+    // Save checkbox state to localStorage
+    document.querySelectorAll('.subtask-checkbox').forEach((checkbox, index) => {
+      const key = 'subtask-1-' + index;
+      checkbox.checked = localStorage.getItem(key) === 'true';
+      
+      checkbox.addEventListener('change', () => {
+        localStorage.setItem(key, checkbox.checked);
+      });
+    });
   </script>
 </body>
 </html>

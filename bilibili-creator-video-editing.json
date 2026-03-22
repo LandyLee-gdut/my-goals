@@ -1,7 +1,7 @@
 {
   "title": "B站百大UP主 - 丝滑剪辑之路",
   "slug": "bilibili-creator-video-editing",
-  "why_it_matters": "热爱表达自己，想用更高质量的视频讲好我想表达的东西",
+  "why_it_mathers": "热爱表达自己，想用更高质量的视频讲好我想表达的东西",
   "context_snapshot": "用户已在B站运营JAY_View频道，专注数码电子产品分享。目标学习影视飓风的丝滑剪辑风格和抖音快节奏风格，同时借YouTube学习提高英语。初心是热爱表达，追求高质量视频创作。",
   "estimated_duration": "6-9个月",
   "journey_start_date": "2026-03-22T15:38:31.290800",
@@ -18,7 +18,14 @@
       "phase_name": "拆解观察期",
       "completed": false,
       "completed_at": null,
-      "reflection_report": null
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "1-1", "title": "观看影视飓风《无限进步》系列", "completed": false},
+        {"id": "1-2", "title": "订阅 Peter McKinnon 频道", "completed": false},
+        {"id": "1-3", "title": "逐帧分析3支影视飓风视频转场", "completed": false},
+        {"id": "1-4", "title": "建立《我的风格参考手册》文档", "completed": false},
+        {"id": "1-5", "title": "记录10个喜欢的转场技巧", "completed": false}
+      ]
     },
     {
       "title": "掌握达芬奇剪辑与调色",
@@ -26,7 +33,14 @@
       "phase_name": "工具筑基期",
       "completed": false,
       "completed_at": null,
-      "reflection_report": null
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "2-1", "title": "下载安装 DaVinci Resolve", "completed": false},
+        {"id": "2-2", "title": "观看官方入门教程", "completed": false},
+        {"id": "2-3", "title": "配置个人快捷键方案", "completed": false},
+        {"id": "2-4", "title": "收集10个LUT预设", "completed": false},
+        {"id": "2-5", "title": "建立分类音效库", "completed": false}
+      ]
     },
     {
       "title": "像素级模仿3支作品",
@@ -34,7 +48,14 @@
       "phase_name": "模仿实战期",
       "completed": false,
       "completed_at": null,
-      "reflection_report": null
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "3-1", "title": "选择第1支模仿目标视频", "completed": false},
+        {"id": "3-2", "title": "完成第1支像素级模仿", "completed": false},
+        {"id": "3-3", "title": "选择第2支模仿目标视频", "completed": false},
+        {"id": "3-4", "title": "完成第2支像素级模仿", "completed": false},
+        {"id": "3-5", "title": "建立《转场招式表》", "completed": false}
+      ]
     },
     {
       "title": "建立YouTube英语输入流",
@@ -42,7 +63,13 @@
       "phase_name": "英语输入期",
       "completed": false,
       "completed_at": null,
-      "reflection_report": null
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "4-1", "title": "订阅10个海外创作者频道", "completed": false},
+        {"id": "4-2", "title": "每天观看1支英语教程视频", "completed": false},
+        {"id": "4-3", "title": "记录20个视频制作相关英语表达", "completed": false},
+        {"id": "4-4", "title": "尝试用英语记笔记", "completed": false}
+      ]
     },
     {
       "title": "JAY_View风格融合实验",
@@ -50,7 +77,14 @@
       "phase_name": "风格融合期",
       "completed": false,
       "completed_at": null,
-      "reflection_report": null
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "5-1", "title": "发布第1支丝滑转场风格视频", "completed": false},
+        {"id": "5-2", "title": "发布第2支快节奏卡点视频", "completed": false},
+        {"id": "5-3", "title": "发布第3支融合实验视频", "completed": false},
+        {"id": "5-4", "title": "收集观众反馈", "completed": false},
+        {"id": "5-5", "title": "确定个人风格方向", "completed": false}
+      ]
     },
     {
       "title": "建立复盘迭代机制",
@@ -58,7 +92,13 @@
       "phase_name": "持续迭代期",
       "completed": false,
       "completed_at": null,
-      "reflection_report": null
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "6-1", "title": "建立数据追踪表格", "completed": false},
+        {"id": "6-2", "title": "完成第1次10视频复盘", "completed": false},
+        {"id": "6-3", "title": "根据数据调整内容方向", "completed": false},
+        {"id": "6-4", "title": "形成稳定更新节奏", "completed": false}
+      ]
     }
   ],
   "stage_reports": []
