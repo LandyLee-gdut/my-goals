@@ -1,0 +1,78 @@
+{
+  "title": "鸿蒙极客赛 - 精致动效作品",
+  "slug": "harmonyos-geek-contest",
+  "why_it_matters": "保持鸿蒙开发技能，获取比赛奖金，增加个人经历",
+  "context_snapshot": "用户已有鸿蒙开发基础，想在6月前参加华为鸿蒙极客赛，开发一个有精致流畅动效的软件，目标是顺利参赛并获取奖金",
+  "estimated_duration": "3个月",
+  "journey_start_date": "2026-03-24T00:21:00",
+  "current_phase": {
+    "index": 0,
+    "name": "赛题拆解与定位期",
+    "start_date": "2026-03-24T00:21:00",
+    "days_in_phase": 0
+  },
+  "milestones": [
+    {
+      "title": "确定参赛方向与产品原型",
+      "description": "深入研究赛题要求，确定参赛方向，完成产品原型设计",
+      "phase_name": "赛题拆解与定位期",
+      "completed": false,
+      "completed_at": null,
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "1-1", "title": "研究鸿蒙极客赛官方赛题文档", "completed": false},
+        {"id": "1-2", "title": "分析评分标准和往年获奖作品", "completed": false},
+        {"id": "1-3", "title": "确定产品方向（工具类/创意类/效率类）", "completed": false},
+        {"id": "1-4", "title": "绘制产品原型草图和核心功能清单", "completed": false},
+        {"id": "1-5", "title": "确定动效风格参考（找3-5个优秀案例）", "completed": false}
+      ]
+    },
+    {
+      "title": "MVP核心功能跑通",
+      "description": "完成核心功能开发，基础框架稳定运行",
+      "phase_name": "核心功能开发期",
+      "completed": false,
+      "completed_at": null,
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "2-1", "title": "搭建项目骨架，配置开发环境", "completed": false},
+        {"id": "2-2", "title": "实现核心数据模型和业务逻辑", "completed": false},
+        {"id": "2-3", "title": "完成主要页面UI布局", "completed": false},
+        {"id": "2-4", "title": "基础交互功能全部可用", "completed": false},
+        {"id": "2-5", "title": "代码自测，修复明显bug", "completed": false}
+      ]
+    },
+    {
+      "title": "精致动效全部落地",
+      "description": "动效达到参赛作品水准，交互体验丝滑流畅",
+      "phase_name": "精致动效打磨期",
+      "completed": false,
+      "completed_at": null,
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "3-1", "title": "研究ArkUI动效API（属性动画、过渡动画）", "completed": false},
+        {"id": "3-2", "title": "实现页面转场动效", "completed": false},
+        {"id": "3-3", "title": "实现列表/卡片交互动效", "completed": false},
+        {"id": "3-4", "title": "实现微交互（按钮、开关、加载）动效", "completed": false},
+        {"id": "3-5", "title": "动效性能优化，确保60fps流畅", "completed": false},
+        {"id": "3-6", "title": "整体视觉风格统一调优", "completed": false}
+      ]
+    },
+    {
+      "title": "作品包装与顺利提交",
+      "description": "完成演示视频、文档，顺利提交参赛作品",
+      "phase_name": "赛前冲刺与提交期",
+      "completed": false,
+      "completed_at": null,
+      "reflection_report": null,
+      "subtasks": [
+        {"id": "4-1", "title": "录制产品演示视频（展示核心功能和动效）", "completed": false},
+        {"id": "4-2", "title": "编写作品说明文档", "completed": false},
+        {"id": "4-3", "title": "准备答辩PPT（如有答辩环节）", "completed": false},
+        {"id": "4-4", "title": "最终代码审查和打包", "completed": false},
+        {"id": "4-5", "title": "按时提交参赛作品", "completed": false}
+      ]
+    }
+  ],
+  "stage_reports": []
+}

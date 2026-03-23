@@ -3,25 +3,57 @@
   "slug": "bilibili-creator-master",
   "why_it_matters": "掌握专业级视频拍摄、剪辑和调色技能，产出有质感的个人作品，向B站百大UP主的目标迈进。从零开始建立完整的影视创作能力体系。",
   "context_snapshot": "用户制定了完整的12周学习计划，每天约1小时，从剪辑软件基础开始，逐步掌握镜头语言、B-roll拍摄、调色技巧，最终形成个人创作风格。参考了影视飓风、Casey Faris、Daniel Schiffer等顶级创作者的教学体系。",
-  "estimated_duration": "3-4个月（基础建立期）",
+  "estimated_duration": "12周（每天约1小时）",
   "journey_start_date": "2026-03-24T00:44:00",
   "current_phase": {
     "index": 0,
-    "name": "基础工作流建立期",
+    "name": "第1阶段：建立基础工作流",
     "start_date": "2026-03-24T00:44:00",
     "days_in_phase": 0
   },
   "milestones": [
     {
-      "title": "🎬 完成第一个完整视频作品",
-      "description": "掌握DaVinci Resolve基础操作，独立完成导入、裁切、拼接、加音乐、导出全流程，产出30-60秒短片",
-      "phase_name": "基础工作流建立期",
+      "title": "🎬 第1周：认识剪辑软件，完成第一支基础视频",
+      "description": "掌握DaVinci Resolve基础操作，学会导入、裁切、拼接、加音乐、导出，做出第一支30-60秒小视频",
+      "phase_name": "第1阶段：建立基础工作流（第1-3周）",
+      "week": 1,
       "completed": false,
       "completed_at": null,
+      "daily_plan": {
+        "day1_2": {
+          "title": "DaVinci Resolve 基础认识",
+          "blogger": "Casey Faris",
+          "video": "New to DaVinci Resolve? Start Here. - The Beginner's Guide",
+          "link": "https://www.youtube.com/watch?v=liNpzKSo8P8",
+          "learn": ["Resolve的大体页面结构", "媒体导入、时间线、基础裁切", "为什么Resolve值得学"],
+          "practice": ["新建一个项目", "导入5段手机视频", "试着把它们拖进时间线，完成最简单的拼接"]
+        },
+        "day3": {
+          "title": "快速建立软件直觉",
+          "blogger": "Casey Faris",
+          "video": "Learn DaVinci Resolve in JUST 10 MINUTES!",
+          "link": "https://www.youtube.com/watch?v=3mo_vgKfYCU",
+          "learn": ["用最短的方式回顾基础操作", "建立'我已经能剪'的信心", "记住最常用动作：切、删、移动、缩放时间线"],
+          "practice": ["用这条视频教的方法，再剪一次15-30秒视频", "尝试删除废镜头，让画面更紧凑"]
+        },
+        "day4_5": {
+          "title": "第一次做完整流程",
+          "blogger": "Casey Faris",
+          "video": "7 Steps to Edit a Video in DaVinci Resolve (Start to Finish)",
+          "link": "https://www.youtube.com/@CaseyFaris/videos",
+          "learn": ["从导素材到出成片的完整流程", "初学者最常犯的流程错误", "先整理再开始剪，不要边剪边乱找素材"],
+          "practice": ["拍一组'我的桌面/我的书包/我的学习角'素材", "剪成一个30秒短片", "要求：有开头、中间、结尾"]
+        },
+        "day6_7": {
+          "title": "本周作业：我的一天（30-60秒）",
+          "requirements": ["至少8个镜头", "有背景音乐", "不需要特效", "只要求：节奏顺、不拖沓、能看完"],
+          "focus": "会导入、会裁切、会拼起来、会导出"
+        }
+      },
       "micro_plans": {
         "resources": [
           "Casey Faris - New to DaVinci Resolve? Start Here",
-          "Casey Faris - Learn DaVinci Resolve in JUST 10 MINUTES",
+          "Casey Faris - Learn DaVinci Resolve in JUST 10 MINUTES!",
           "DaVinci Resolve软件（免费版）"
         ],
         "methodology": [
@@ -37,18 +69,52 @@
       },
       "subtasks": [
         {"id": "1-1", "title": "安装并配置DaVinci Resolve", "completed": false},
-        {"id": "1-2", "title": "观看Casey Faris入门教程", "completed": false},
+        {"id": "1-2", "title": "观看Casey Faris入门教程（Day1-2）", "completed": false},
         {"id": "1-3", "title": "完成第一个简单拼接练习", "completed": false},
-        {"id": "1-4", "title": "拍摄'我的一天'素材（8+镜头）", "completed": false},
-        {"id": "1-5", "title": "完成第一个完整作品并导出", "completed": false}
+        {"id": "1-4", "title": "观看10分钟速通教程（Day3）", "completed": false},
+        {"id": "1-5", "title": "完成完整流程练习（Day4-5）", "completed": false},
+        {"id": "1-6", "title": "拍摄'我的一天'素材（8+镜头）", "completed": false},
+        {"id": "1-7", "title": "完成本周作业并导出", "completed": false}
       ]
     },
     {
-      "title": "🎥 建立镜头语言意识",
-      "description": "理解景别概念（全景/中景/近景/特写），学会用不同景别组合讲述一个动作，建立镜头设计思维",
-      "phase_name": "基础工作流建立期",
+      "title": "🎥 第2周：建立镜头意识，知道'拍什么'",
+      "description": "认识镜头景别，理解为什么有些视频看起来更'像作品'，学会一个场景拍多个不同大小的镜头",
+      "phase_name": "第1阶段：建立基础工作流（第1-3周）",
+      "week": 2,
       "completed": false,
       "completed_at": null,
+      "daily_plan": {
+        "day1_2": {
+          "title": "理解镜头大小",
+          "blogger": "StudioBinder",
+          "video": "Ultimate Guide to Camera Shots: Every Shot Size Explained",
+          "link": "https://www.youtube.com/watch?v=AyML8xuKfoc",
+          "learn": ["大全景、中景、近景、特写分别适合表达什么", "为什么一整段视频不能只有一个景别", "如何用不同景别让画面更丰富"],
+          "practice": ["拍同一个动作：拿起杯子喝水", "分别拍：全景、中景、近景、特写", "回看时感受：哪个镜头更适合交代环境，哪个更适合强调动作"]
+        },
+        "day3": {
+          "title": "补一个更简短的镜头理解",
+          "blogger": "StudioBinder",
+          "video": "All Camera SHOT SIZES Explained | Cinematography",
+          "link": "https://www.youtube.com/watch?v=53C4JPULu68",
+          "learn": ["用更直观的方式再理解shot size", "开始养成'一个动作至少拍3个角度/景别'的习惯"],
+          "practice": ["拍'出门前准备'场景", "至少交代1个环境镜头+2个动作镜头+2个细节镜头"]
+        },
+        "day4_5": {
+          "title": "建立基础镜头清单意识",
+          "blogger": "StudioBinder",
+          "video": "Shot Lists in StudioBinder — Plan Every Shot",
+          "link": "https://www.youtube.com/watch?v=D_LXkACnswk",
+          "learn": ["什么叫shot list", "为什么拍之前先想镜头顺序，会让后期更轻松", "从'随便拍'进入'有设计地拍'"],
+          "practice": ["给一个小主题写6个镜头：比如'泡咖啡'或'收拾书包'", "按清单去拍，不允许想到哪拍到哪"]
+        },
+        "day6_7": {
+          "title": "本周作业：一个动作，拍出层次",
+          "requirements": ["拍1个简单主题（如洗手、泡面、整理桌面）", "至少6个镜头", "每个镜头承担不同功能：交代环境/展示动作/展示细节"],
+          "focus": "从'记录'开始向'表达'过渡"
+        }
+      },
       "micro_plans": {
         "resources": [
           "StudioBinder - Ultimate Guide to Camera Shots",
@@ -66,19 +132,45 @@
         ]
       },
       "subtasks": [
-        {"id": "2-1", "title": "观看StudioBinder镜头大小教程", "completed": false},
+        {"id": "2-1", "title": "观看StudioBinder镜头大小教程（Day1-2）", "completed": false},
         {"id": "2-2", "title": "完成'喝水'动作多景别拍摄练习", "completed": false},
-        {"id": "2-3", "title": "学习Shot List制作方法", "completed": false},
-        {"id": "2-4", "title": "完成'泡咖啡/收拾书包'镜头清单拍摄", "completed": false},
-        {"id": "2-5", "title": "剪辑6+镜头短片", "completed": false}
+        {"id": "2-3", "title": "观看补充镜头理解教程（Day3）", "completed": false},
+        {"id": "2-4", "title": "完成'出门前准备'5镜头拍摄", "completed": false},
+        {"id": "2-5", "title": "学习Shot List制作方法（Day4-5）", "completed": false},
+        {"id": "2-6", "title": "完成'泡咖啡/收拾书包'镜头清单拍摄", "completed": false},
+        {"id": "2-7", "title": "剪辑本周作业短片（6+镜头）", "completed": false}
       ]
     },
     {
-      "title": "🎞️ 掌握基础运镜技巧",
-      "description": "学会推、拉、平移、跟拍、摇镜等基础运镜，理解镜头运动的叙事时机，拍出有流动感的画面",
-      "phase_name": "基础工作流建立期",
+      "title": "🎞️ 第3周：开始学镜头运动，让画面不死板",
+      "description": "认识基础运镜，学会什么时候该固定拍，什么时候该移动，开始拍出更'流动'的素材",
+      "phase_name": "第1阶段：建立基础工作流（第1-3周）",
+      "week": 3,
       "completed": false,
       "completed_at": null,
+      "daily_plan": {
+        "day1_2": {
+          "title": "理解基础运镜逻辑",
+          "blogger": "StudioBinder",
+          "video": "Ultimate Guide to Camera Movement — Every Camera Movement Technique Explained",
+          "link": "https://www.youtube.com/watch?v=IiyBo-qLDeM",
+          "learn": ["推、拉、平移、跟拍、摇镜各自的感觉", "为什么很多'高级感'来自稳定的运动，而不是乱晃", "什么时候镜头应该动，什么时候应该静"],
+          "practice": ["用手机拍5种运动：固定、缓慢前推、缓慢后拉、左右平移、跟随物体移动", "每种只拍3-5秒"]
+        },
+        "day3": {
+          "title": "补充更具体的运动细节",
+          "blogger": "StudioBinder",
+          "video": "Panning & Tilting Camera Movements — The Ultimate Guide",
+          "link": "https://www.youtube.com/watch?v=iAZvLA_K94w",
+          "learn": ["平摇、俯仰这些最常用运镜的基础用法", "为什么很多新手会把镜头摇得太快", "如何拍得更稳、更有控制感"],
+          "practice": ["对同一个物体做3次慢速pan/tilt", "控制开始和结束不要猛顿"]
+        },
+        "day4_7": {
+          "title": "本周作业：拍一个'静物也有流动感'的20秒短片",
+          "requirements": ["主题可选：键盘、咖啡杯、耳机、书本", "至少5个镜头", "至少有2个平稳运动镜头", "不要加花里胡哨转场"],
+          "focus": "画面开始有运动设计，而不是纯记录"
+        }
+      },
       "micro_plans": {
         "resources": [
           "StudioBinder - Ultimate Guide to Camera Movement",
@@ -96,19 +188,44 @@
         ]
       },
       "subtasks": [
-        {"id": "3-1", "title": "观看运镜基础教程", "completed": false},
+        {"id": "3-1", "title": "观看运镜基础教程（Day1-2）", "completed": false},
         {"id": "3-2", "title": "拍摄5种运镜对比素材", "completed": false},
-        {"id": "3-3", "title": "练习慢速pan/tilt控制", "completed": false},
-        {"id": "3-4", "title": "拍摄'键盘/咖啡杯/耳机'主题素材", "completed": false},
-        {"id": "3-5", "title": "剪辑5+镜头运镜短片", "completed": false}
+        {"id": "3-3", "title": "观看pan/tilt教程（Day3）", "completed": false},
+        {"id": "3-4", "title": "练习慢速pan/tilt控制", "completed": false},
+        {"id": "3-5", "title": "拍摄'键盘/咖啡杯/耳机'主题素材", "completed": false},
+        {"id": "3-6", "title": "剪辑本周作业短片（5+镜头）", "completed": false}
       ]
     },
     {
-      "title": "📹 入门B-roll与转场设计",
-      "description": "理解B-roll的作用，学会拍摄能剪得顺的素材，掌握动作匹配转场，让镜头衔接自然流畅",
-      "phase_name": "B-roll与转场期",
+      "title": "📹 第4周：入门B-roll，理解'拍的时候就要想怎么剪'",
+      "description": "认识B-roll的作用，学会拍能剪得顺的素材，明白转场不是后期魔法，而是前期设计",
+      "phase_name": "第2阶段：学习B-roll与自然转场（第4-6周）",
+      "week": 4,
       "completed": false,
       "completed_at": null,
+      "daily_plan": {
+        "day1_3": {
+          "title": "系统入门B-roll",
+          "blogger": "Daniel Schiffer",
+          "video": "How to Shoot & Edit B Roll For Beginners (Step-by-Step Tutorial)",
+          "link": "https://www.youtube.com/watch?v=83lrpsKcbqQ",
+          "learn": ["什么是B-roll", "为什么B-roll要围绕动作、节奏和细节来拍", "镜头之间如何通过动作和方向衔接"],
+          "practice": ["拍一个'拿起、放下、靠近、离开'的小动作sequence", "剪成15-20秒", "注意镜头方向尽量一致"]
+        },
+        "day4_5": {
+          "title": "学习转场前置思维",
+          "blogger": "Daniel Schiffer",
+          "video": "How I Plan Shots & Transitions | B ROLL 101",
+          "link": "https://www.youtube.com/watch?v=3mZuJAWH1Ow",
+          "learn": ["转场在拍摄前就要想好", "动作匹配比插件转场更重要", "一个自然的镜头连接，往往比一个夸张特效更高级"],
+          "practice": ["设计3个镜头：打开门 → 走出门 → 拉上门", "想办法通过动作方向把它们接顺"]
+        },
+        "day6_7": {
+          "title": "本周作业：我的晨间流程（20-30秒）",
+          "requirements": ["至少8个B-roll镜头", "允许只用自然切，不用花哨转场", "重点是镜头动作之间连得顺"],
+          "focus": "拍的时候开始为后期服务"
+        }
+      },
       "micro_plans": {
         "resources": [
           "Daniel Schiffer - How to Shoot & Edit B Roll For Beginners",
@@ -126,19 +243,44 @@
         ]
       },
       "subtasks": [
-        {"id": "4-1", "title": "观看Daniel Schiffer B-roll教程", "completed": false},
+        {"id": "4-1", "title": "观看Daniel Schiffer B-roll教程（Day1-3）", "completed": false},
         {"id": "4-2", "title": "拍摄'拿起/放下/靠近/离开'动作序列", "completed": false},
-        {"id": "4-3", "title": "学习转场前置规划", "completed": false},
+        {"id": "4-3", "title": "学习转场前置规划（Day4-5）", "completed": false},
         {"id": "4-4", "title": "设计'开门→走出门→拉上门'镜头组", "completed": false},
-        {"id": "4-5", "title": "完成晨间流程B-roll作品", "completed": false}
+        {"id": "4-5", "title": "完成晨间流程B-roll作品（8+镜头）", "completed": false}
       ]
     },
     {
-      "title": "✨ 提升素材质感与节奏感",
-      "description": "学会从普通素材中剪出质感，通过剪辑强化节奏和动势，掌握速度变化与音效配合",
-      "phase_name": "B-roll与转场期",
+      "title": "✨ 第5周：学会把普通素材剪得更'有味道'",
+      "description": "明白什么叫'普通素材也能剪高级'，学会在后期强化节奏和动势",
+      "phase_name": "第2阶段：学习B-roll与自然转场（第4-6周）",
+      "week": 5,
       "completed": false,
       "completed_at": null,
+      "daily_plan": {
+        "day1_2": {
+          "title": "从平凡镜头里做出质感",
+          "blogger": "Daniel Schiffer",
+          "video": "How I turn a boring shot into 'EPIC B ROLL' | Behind the Edit",
+          "link": "https://www.youtube.com/watch?v=lVIraY22xzw",
+          "learn": ["为什么一个普通镜头也可以通过剪辑更有力量", "节奏、裁切点、速度变化如何服务'高级感'", "不一定要靠昂贵设备，关键是镜头设计和后期意识"],
+          "practice": ["拍3个很普通的镜头：开抽屉、放手机、坐下", "尝试用裁切和音乐，让它们更有动势"]
+        },
+        "day3_4": {
+          "title": "看一次完整幕后，理解'流畅感'来源",
+          "blogger": "Daniel Schiffer",
+          "video": "HOW I FILM EPIC HANDHELD B ROLL | Behind the Scenes",
+          "link": "https://www.youtube.com/watch?v=JtitcwwEl-A",
+          "learn": ["手持画面也可以拍得平稳、有控制", "机位、动作、镜头顺序如何共同服务节奏", "为什么'稳'不代表完全不动，而是有目的地动"],
+          "practice": ["用手机做一组手持近景B-roll", "重点练：动作慢一点、呼吸稳一点、每个镜头更短一点"]
+        },
+        "day5_7": {
+          "title": "本周作业：拍一个'产品感'小短片",
+          "theme_options": ["耳机", "键盘", "手表", "水杯"],
+          "requirements": ["15-25秒", "镜头尽量短小精悍", "重点表现质感，而不是讲故事"],
+          "focus": "学会强化镜头的节奏感和冲击感"
+        }
+      },
       "micro_plans": {
         "resources": [
           "Daniel Schiffer - How I turn a boring shot into EPIC B ROLL",
@@ -156,19 +298,44 @@
         ]
       },
       "subtasks": [
-        {"id": "5-1", "title": "观看'从平凡到质感'教程", "completed": false},
+        {"id": "5-1", "title": "观看'从平凡到质感'教程（Day1-2）", "completed": false},
         {"id": "5-2", "title": "拍摄普通动作（开抽屉/放手机/坐下）", "completed": false},
         {"id": "5-3", "title": "用裁切和音乐强化动势", "completed": false},
-        {"id": "5-4", "title": "练习手持近景B-roll", "completed": false},
-        {"id": "5-5", "title": "完成产品感短片（耳机/键盘/手表/水杯）", "completed": false}
+        {"id": "5-4", "title": "观看手持幕后教程（Day3-4）", "completed": false},
+        {"id": "5-5", "title": "练习手持近景B-roll", "completed": false},
+        {"id": "5-6", "title": "完成产品感短片（15-25秒）", "completed": false}
       ]
     },
     {
-      "title": "🎵 建立剪辑节奏意识",
-      "description": "理解剪辑如何服务故事和情绪，学会留白与快剪的平衡，让观众愿意继续看下去",
-      "phase_name": "B-roll与转场期",
+      "title": "🎵 第6周：建立剪辑节奏意识",
+      "description": "明白'会剪'不等于'剪得好看'，学会让观众愿意继续看下去",
+      "phase_name": "第2阶段：学习B-roll与自然转场（第4-6周）",
+      "week": 6,
       "completed": false,
       "completed_at": null,
+      "daily_plan": {
+        "day1_2": {
+          "title": "理解剪辑是怎么让故事更深的",
+          "blogger": "Hillier Smith",
+          "video": "The Editing That Makes Your Story 10x Deeper",
+          "link": "https://www.youtube.com/watch?v=mPhhBgTIG2Y",
+          "learn": ["节奏不是一味快剪", "什么时候该留白，什么时候该切", "为什么观众会觉得'有情绪'"],
+          "practice": ["找你之前拍的一段素材", "做两个版本：一个剪很快，一个有留白", "对比哪个更有感觉"]
+        },
+        "day3": {
+          "title": "学几个真正有用的剪辑思维",
+          "blogger": "Hillier Smith",
+          "video": "3 Editing Secrets I Wish I Knew Earlier",
+          "link": "https://www.youtube.com/watch?v=XIVSa3wo0JU",
+          "learn": ["早知道会少走弯路的剪辑原则", "'为什么剪'比'怎么剪'更重要", "观众注意力是如何被组织的"],
+          "practice": ["做一页笔记：这3个点里，你最容易忽视的是哪个", "在本周作业里强行应用其中1个"]
+        },
+        "day4_7": {
+          "title": "本周作业：重新剪旧素材",
+          "requirements": ["从你前5周拍过的素材里选一组", "不重新拍，只重剪", "目标：让节奏更舒服、更像'作品'"],
+          "focus": "开始真正进入'剪辑不是拼素材，而是塑造观看感受'"
+        }
+      },
       "micro_plans": {
         "resources": [
           "Hillier Smith - The Editing That Makes Your Story 10x Deeper",
@@ -186,19 +353,44 @@
         ]
       },
       "subtasks": [
-        {"id": "6-1", "title": "观看Hillier Smith剪辑思维教程", "completed": false},
+        {"id": "6-1", "title": "观看Hillier Smith剪辑思维教程（Day1-2）", "completed": false},
         {"id": "6-2", "title": "做两个版本对比：快剪 vs 留白", "completed": false},
-        {"id": "6-3", "title": "笔记：3个最容易忽视的原则", "completed": false},
-        {"id": "6-4", "title": "选择前5周素材进行重剪", "completed": false},
-        {"id": "6-5", "title": "完成节奏优化版本", "completed": false}
+        {"id": "6-3", "title": "观看3个剪辑秘密教程（Day3）", "completed": false},
+        {"id": "6-4", "title": "笔记：3个最容易忽视的原则", "completed": false},
+        {"id": "6-5", "title": "选择前5周素材进行重剪", "completed": false},
+        {"id": "6-6", "title": "完成节奏优化版本", "completed": false}
       ]
     },
     {
-      "title": "🎨 调色入门与色彩校正",
-      "description": "理解调色先做校正的原则，学会处理曝光、白平衡、对比度，让画面干净统一",
-      "phase_name": "调色与后期质感期",
+      "title": "🎨 第7周：调色入门，先学校正，不急着追电影感",
+      "description": "理解调色前先做校正，学会处理曝光、白平衡、对比，让画面先干净统一",
+      "phase_name": "第3阶段：进入调色与后期质感（第7-9周）",
+      "week": 7,
       "completed": false,
       "completed_at": null,
+      "daily_plan": {
+        "day1_3": {
+          "title": "调色总入门",
+          "blogger": "Casey Faris",
+          "video": "How to Start Color Grading in DaVinci Resolve - Total Beginner's Guide",
+          "link": "https://www.youtube.com/watch?v=Wc6EAZp7pzQ",
+          "learn": ["color grading和color correction的差别", "新手最应该先调什么", "不同镜头颜色不统一时该怎么处理"],
+          "practice": ["找3个不同光线条件下拍的镜头", "尝试让它们色温和亮度看起来更接近"]
+        },
+        "day4": {
+          "title": "熟悉Color页界面",
+          "blogger": "Casey Faris",
+          "video": "Full COLOR Page Tour for DaVinci Resolve Beginners",
+          "link": "https://www.youtube.com/watch?v=NefAhOTNJYU",
+          "learn": ["Color页里哪些区域最常用", "初学者不必一开始就碰复杂节点", "知道主轮、曲线、示波器大概在做什么"],
+          "practice": ["打开Color页面", "对一个镜头只做3件事：调曝光、调白平衡、调饱和度"]
+        },
+        "day5_7": {
+          "title": "本周作业：让一段视频'统一'",
+          "requirements": ["选择20-30秒视频", "至少包含4个镜头", "让这些镜头看起来像在同一个世界里", "先不追求大片感，只追求干净一致"],
+          "focus": "校正优先于风格化"
+        }
+      },
       "micro_plans": {
         "resources": [
           "Casey Faris - How to Start Color Grading in DaVinci Resolve",
@@ -216,19 +408,44 @@
         ]
       },
       "subtasks": [
-        {"id": "7-1", "title": "观看调色入门教程", "completed": false},
+        {"id": "7-1", "title": "观看调色入门教程（Day1-3）", "completed": false},
         {"id": "7-2", "title": "收集3个不同光线条件的镜头", "completed": false},
         {"id": "7-3", "title": "练习色温和亮度统一", "completed": false},
-        {"id": "7-4", "title": "熟悉Color页面操作", "completed": false},
-        {"id": "7-5", "title": "完成4+镜头调色统一作品", "completed": false}
+        {"id": "7-4", "title": "观看Color页面教程（Day4）", "completed": false},
+        {"id": "7-5", "title": "熟悉Color页面操作", "completed": false},
+        {"id": "7-6", "title": "完成4+镜头调色统一作品", "completed": false}
       ]
     },
     {
-      "title": "⚙️ 建立完整后期工作流",
-      "description": "掌握剪辑、音频、调色的正确顺序，建立属于自己的固定工作流程，不再乱剪乱调",
-      "phase_name": "调色与后期质感期",
+      "title": "⚙️ 第8周：理解工作流，不再乱剪乱调",
+      "description": "建立属于自己的后期顺序，让剪辑、音频、调色不再互相打架",
+      "phase_name": "第3阶段：进入调色与后期质感（第7-9周）",
+      "week": 8,
       "completed": false,
       "completed_at": null,
+      "daily_plan": {
+        "day1_2": {
+          "title": "建立初学者工作流认知",
+          "blogger": "Casey Faris",
+          "video": "15 Years of Workflow Wisdom in 15 Minutes - DaVinci Resolve Beginners Advice",
+          "link": "https://www.youtube.com/watch?v=F6TVYVjDnoM",
+          "learn": ["什么顺序做事最省时间", "为什么很多新手越学越乱，是因为没有工作流", "什么时候应该开始调色，什么时候应该先锁画面"],
+          "practice": ["给自己写一个固定流程：整理素材 → 粗剪 → 精剪 → 音频 → 调色 → 导出", "以后每支片子都按这个流程走"]
+        },
+        "day3_4": {
+          "title": "回到Resolve基础课程补漏",
+          "blogger": "Casey Faris",
+          "video": "Introduction to DaVinci Resolve - [Full Course] for Beginners",
+          "link": "https://www.youtube.com/watch?v=MCDVcQIA3UM",
+          "learn": ["系统补足之前忽略的基础", "把软件理解得更完整", "避免只会做局部动作，不会整体流程"],
+          "practice": ["跳着补自己不会的部分", "重点看你之前最卡的地方"]
+        },
+        "day5_7": {
+          "title": "本周作业：第一次做'完整小作品'",
+          "requirements": ["时长30-45秒", "包含镜头设计、基础节奏、基础调色", "题材建议：桌面setup/咖啡/学习日常/出门准备"],
+          "focus": "建立完整的小型创作闭环"
+        }
+      },
       "micro_plans": {
         "resources": [
           "Casey Faris - 15 Years of Workflow Wisdom",
@@ -241,23 +458,39 @@
         ],
         "outputs": [
           "建立固定流程：整理→粗剪→精剪→音频→调色→导出",
-          "完成30-45秒完整作品（桌面/咖啡/学习日常/出门准备）"
+          "完成30-45秒完整作品"
         ]
       },
       "subtasks": [
-        {"id": "8-1", "title": "观看工作流教程", "completed": false},
+        {"id": "8-1", "title": "观看工作流教程（Day1-2）", "completed": false},
         {"id": "8-2", "title": "写下自己的固定流程", "completed": false},
-        {"id": "8-3", "title": "回看Full Course补漏洞", "completed": false},
+        {"id": "8-3", "title": "观看Full Course补漏洞（Day3-4）", "completed": false},
         {"id": "8-4", "title": "按固定流程拍摄素材", "completed": false},
-        {"id": "8-5", "title": "完成完整小作品", "completed": false}
+        {"id": "8-5", "title": "完成完整小作品（30-45秒）", "completed": false}
       ]
     },
     {
-      "title": "🔮 理解色彩管理基础",
-      "description": "了解色彩管理概念，知道不同设备素材的处理逻辑，避免调色过度和颜色脏的问题",
-      "phase_name": "调色与后期质感期",
+      "title": "🔮 第9周：开始理解色彩管理，但先懂概念",
+      "description": "不要求你现在就精通，先知道为什么有些素材难调、有些素材更稳定",
+      "phase_name": "第3阶段：进入调色与后期质感（第7-9周）",
+      "week": 9,
       "completed": false,
       "completed_at": null,
+      "daily_plan": {
+        "day1_2": {
+          "title": "色彩管理初认识",
+          "blogger": "Casey Faris",
+          "video": "The Beginner's Guide to COLOR MANAGEMENT in DaVinci Resolve",
+          "link": "https://www.youtube.com/watch?v=zffM8_PaPCU",
+          "learn": ["什么是color management", "为什么不同设备素材会看起来不一样", "为什么新手常常一上来调色会越调越脏"],
+          "practice": ["不要求你完全设置明白", "你只需要记住：素材来源不同，调色前的处理逻辑也不同"]
+        },
+        "day3_7": {
+          "title": "本周作业：做一版'更稳的颜色'",
+          "requirements": ["选你之前做过的一支视频", "重新做一版更保守、更统一的调色", "重点：避免过饱和、避免黑位压死、避免肤色奇怪"],
+          "focus": "培养克制感，别一上来就用力过猛"
+        }
+      },
       "micro_plans": {
         "resources": [
           "Casey Faris - The Beginner's Guide to COLOR MANAGEMENT"
@@ -273,7 +506,7 @@
         ]
       },
       "subtasks": [
-        {"id": "9-1", "title": "观看色彩管理教程", "completed": false},
+        {"id": "9-1", "title": "观看色彩管理教程（Day1-2）", "completed": false},
         {"id": "9-2", "title": "理解color management解决的问题", "completed": false},
         {"id": "9-3", "title": "选择之前作品重调", "completed": false},
         {"id": "9-4", "title": "避免过饱和、黑位压死、肤色奇怪", "completed": false},
@@ -281,11 +514,33 @@
       ]
     },
     {
-      "title": "📖 学习故事感剪辑",
-      "description": "从技术练习转向表达练习，学会围绕情绪组织镜头，让视频有明确的气质和感受",
-      "phase_name": "风格与个人创作期",
+      "title": "📖 第10周：学习'故事感'的剪辑",
+      "description": "不只是把动作剪顺，要学会让视频更有情绪和层次",
+      "phase_name": "第4阶段：进阶到风格、故事与个人创作（第10-12周）",
+      "week": 10,
       "completed": false,
       "completed_at": null,
+      "daily_plan": {
+        "day1_2": {
+          "title": "理解故事型剪辑者的思路",
+          "reference": "How Hayden @HillierSmith Edits Like a Storyteller",
+          "link": "https://www.youtube.com/watch?v=UkWgk6W79mg",
+          "learn": ["为什么真正好的剪辑不是技术堆砌", "如何围绕'感受'来做删减和组织", "什么是叙事优先，而不是镜头优先"],
+          "practice": ["拿一个日常主题：例如'晚上回宿舍'", "想想它是平静的、疲惫的，还是治愈的", "剪的时候围绕一种情绪来选镜头"]
+        },
+        "day3_4": {
+          "title": "从YouTube内容角度理解节奏",
+          "reference": "Optimize Your Editing for YouTube With HillierSmith",
+          "link": "https://www.youtube.com/watch?v=eboQ7R34Ums",
+          "learn": ["YouTube视频为什么特别重视前几秒", "什么样的节奏更适合网络观看", "'好看'之外，还要'看得下去'"],
+          "practice": ["给你的一支短片重做开头5秒", "让观众更快知道'这条视频值得继续看'"]
+        },
+        "day5_7": {
+          "title": "本周作业：做一支45秒'有情绪'的日常片",
+          "requirements": ["不追求大量特效", "追求统一气质", "让观众看完后有一个明确感受：安静、治愈、利落、酷感，任选一种"],
+          "focus": "从技术练习转向表达练习"
+        }
+      },
       "micro_plans": {
         "resources": [
           "Hillier Smith - How Hayden Edits Like a Storyteller",
@@ -303,19 +558,40 @@
         ]
       },
       "subtasks": [
-        {"id": "10-1", "title": "观看故事感剪辑教程", "completed": false},
+        {"id": "10-1", "title": "观看故事感剪辑教程（Day1-2）", "completed": false},
         {"id": "10-2", "title": "选择情绪主题（安静/治愈/利落/酷感）", "completed": false},
-        {"id": "10-3", "title": "重做短片开头5秒", "completed": false},
-        {"id": "10-4", "title": "围绕情绪选择镜头", "completed": false},
-        {"id": "10-5", "title": "完成45秒情绪日常片", "completed": false}
+        {"id": "10-3", "title": "观看YouTube节奏教程（Day3-4）", "completed": false},
+        {"id": "10-4", "title": "重做短片开头5秒", "completed": false},
+        {"id": "10-5", "title": "围绕情绪选择镜头", "completed": false},
+        {"id": "10-6", "title": "完成45秒情绪日常片", "completed": false}
       ]
     },
     {
-      "title": "🎭 建立个人风格模板",
-      "description": "拆解喜欢的创作者风格，总结自己的创作模板，形成独特的个人风格印记",
-      "phase_name": "风格与个人创作期",
+      "title": "🎭 第11周：开始建立你自己的博主风格模板",
+      "description": "不再只会跟着教程做，开始拆解喜欢的视频，并总结模板",
+      "phase_name": "第4阶段：进阶到风格、故事与个人创作（第10-12周）",
+      "week": 11,
       "completed": false,
       "completed_at": null,
+      "daily_plan": {
+        "day1_2": {
+          "title": "回看Daniel Schiffer的产品商业感风格",
+          "resource": "Product Commercial Tutorials | Daniel Schiffer",
+          "link": "https://www.youtube.com/playlist?list=PLRibnNHUsGljj6GFQYmC7AHiz1RVDREkz",
+          "learn": ["商业感镜头为什么利落", "动作、镜头长度、音效、速度变化如何结合", "哪些技巧适合你，哪些不适合日常博主内容"],
+          "practice": ["选其中1条你喜欢的风格", "模仿它的镜头组织方式，不要求一模一样"]
+        },
+        "day3_4": {
+          "title": "总结自己的模板",
+          "template_items": ["开头镜头常用什么类型", "B-roll喜欢拍哪些角度", "剪辑偏快还是偏慢", "调色偏冷还是偏暖", "喜欢哪种音乐氛围"],
+          "practice": ["写1页模板", "下次拍片前先按模板列shot list"]
+        },
+        "day5_7": {
+          "title": "本周作业：模仿 + 微创新",
+          "requirements": ["做一支30-45秒短片", "明确参考一个你喜欢的创作者风格", "但至少加入1个你自己的小特点"],
+          "focus": "开始建立个人风格，而不是纯复刻"
+        }
+      },
       "micro_plans": {
         "resources": [
           "Daniel Schiffer - Product Commercial Tutorials系列"
@@ -332,19 +608,38 @@
         ]
       },
       "subtasks": [
-        {"id": "11-1", "title": "观看Daniel Schiffer产品商业教程", "completed": false},
+        {"id": "11-1", "title": "观看Daniel Schiffer产品商业教程（Day1-2）", "completed": false},
         {"id": "11-2", "title": "拆解喜欢的创作者风格", "completed": false},
-        {"id": "11-3", "title": "写下个人模板（开头/B-roll/节奏/调色/音乐）", "completed": false},
+        {"id": "11-3", "title": "写下个人模板（开头/B-roll/节奏/调色/音乐）（Day3-4）", "completed": false},
         {"id": "11-4", "title": "按模板列shot list", "completed": false},
-        {"id": "11-5", "title": "完成模仿+微创新作品", "completed": false}
+        {"id": "11-5", "title": "完成模仿+微创新作品（30-45秒）", "completed": false}
       ]
     },
     {
-      "title": "🏆 完成第一支'像样的小作品'",
-      "description": "综合运用前11周所学，完成一支真正值得保存的45-60秒个人风格短片，形成完整创作闭环",
-      "phase_name": "风格与个人创作期",
+      "title": "🏆 第12周：完成第一支'像样的小作品'",
+      "description": "综合使用前面11周学到的内容，做一支真正值得保存的作品",
+      "phase_name": "第4阶段：进阶到风格、故事与个人创作（第10-12周）",
+      "week": 12,
       "completed": false,
       "completed_at": null,
+      "review_resources": [
+        "Casey Faris：基础流程/调色入门/工作流",
+        "Daniel Schiffer：B-roll/转场设计/产品感镜头",
+        "Hillier Smith：节奏/故事感/观众注意力",
+        "StudioBinder：镜头语言/运镜/镜头清单"
+      ],
+      "final_project": {
+        "title": "做一支45-60秒的个人风格短片",
+        "theme_suggestions": ["我的学习日常", "一次出门", "我的桌面setup", "一杯咖啡的制作", "一次夜晚散步"],
+        "minimum_requirements": ["有开头钩子", "至少8-12个镜头", "至少2种景别", "至少1处有意识的镜头衔接", "有音乐", "有基础调色统一", "节奏不拖"]
+      },
+      "reflection_questions": [
+        "哪个镜头最像作品？为什么？",
+        "哪个转场最自然？",
+        "哪个地方节奏还太拖？",
+        "哪个颜色最不统一？",
+        "哪个镜头其实应该重拍？"
+      ],
       "micro_plans": {
         "resources": [
           "回顾前11周最有收获的视频",
@@ -362,13 +657,86 @@
         ]
       },
       "subtasks": [
-        {"id": "12-1", "title": "选择题材（学习日常/出门/桌面setup/咖啡/夜散步）", "completed": false},
-        {"id": "12-2", "title": "设计开头钩子", "completed": false},
-        {"id": "12-3", "title": "拍摄8-12个多景别镜头", "completed": false},
-        {"id": "12-4", "title": "完成剪辑+调色+配乐", "completed": false},
-        {"id": "12-5", "title": "完成复盘：最好镜头/最顺转场/最拖节奏/最不统一颜色/该重拍镜头", "completed": false}
+        {"id": "12-1", "title": "回顾前11周核心知识点", "completed": false},
+        {"id": "12-2", "title": "选择题材（学习日常/出门/桌面setup/咖啡/夜散步）", "completed": false},
+        {"id": "12-3", "title": "设计开头钩子", "completed": false},
+        {"id": "12-4", "title": "拍摄8-12个多景别镜头", "completed": false},
+        {"id": "12-5", "title": "完成剪辑+调色+配乐", "completed": false},
+        {"id": "12-6", "title": "完成复盘5问", "completed": false}
       ]
     }
   ],
-  "stage_reports": []
+  "stage_reports": [],
+  "appendix": {
+    "casey_faris_learning_path": {
+      "description": "Casey Faris的DaVinci Resolve专项学习路径",
+      "why_casey": ["把新手最容易乱掉的地方讲清楚", "有总入口视频+完整入门课+按主题拆开的基础小课", "按'先搭框架，再按需补漏洞'的方式学"],
+      "learning_order": [
+        {
+          "step": "第0步：先认识Casey的内容结构",
+          "channel": "https://www.youtube.com/@CaseyFaris/videos",
+          "tip": "不要从最花的技巧视频开始看，优先找Beginner's Guide/Full Course/Resolve Basics/Workflow/Color Management"
+        },
+        {
+          "step": "A1. 总入口：第一次打开Resolve先看它",
+          "video": "New to DaVinci Resolve? Start Here. - The Beginner's Guide",
+          "link": "https://www.youtube.com/watch?v=liNpzKSo8P8",
+          "when": "第1周"
+        },
+        {
+          "step": "A2. 极简速通：10分钟建立操作直觉",
+          "video": "Learn DaVinci Resolve in JUST 10 MINUTES!",
+          "link": "https://www.youtube.com/watch?v=3mo_vgKfYCU",
+          "when": "第1周"
+        },
+        {
+          "step": "B1. 完整入门课：把零散知识连成流程",
+          "video": "Introduction to DaVinci Resolve - [Full Course] for Beginners",
+          "link": "https://www.youtube.com/watch?v=MCDVcQIA3UM",
+          "when": "第8周"
+        },
+        {
+          "step": "C1. 工作流视频：解决'为什么我越学越乱'",
+          "video": "15 Years of Workflow Wisdom in 15 Minutes",
+          "link": "https://www.youtube.com/watch?v=F6TVYVjDnoM",
+          "when": "第8周"
+        },
+        {
+          "step": "D1. 先学'统一'，不是先学'电影感'",
+          "video": "The Beginner's Guide to COLOR MANAGEMENT",
+          "link": "https://www.youtube.com/watch?v=zffM8_PaPCU",
+          "when": "第9周"
+        }
+      ],
+      "playlists": {
+        "resolve_basics": "https://www.youtube.com/playlist?list=PLnLRZNxrwwEKCKzigSNhjn46QPqyZbCjL",
+        "my_resolve_courses": "https://www.youtube.com/playlist?list=PLnLRZNxrwwEILafCIa4HiswG29SxQYhH0m"
+      }
+    },
+    "recommended_creators": {
+      "casey_faris": {
+        "viewing_method": "按'课程'看",
+        "focus": "解决不会操作、不会流程、不会调色的问题"
+      },
+      "daniel_schiffer": {
+        "viewing_method": "看教程+幕后，不要只看成片",
+        "focus": "偷他的镜头设计和转场思维"
+      },
+      "hillier_smith": {
+        "viewing_method": "当成'剪辑思维课'",
+        "focus": "理解为什么这样剪更抓人"
+      },
+      "studiobinder": {
+        "viewing_method": "当成'影视语言基础课'",
+        "focus": "补底层原理，避免只会模仿"
+      }
+    },
+    "execution_principles": [
+      "一次只练一个重点",
+      "每周至少做一个小成片",
+      "看完教程立刻模仿，不要只收藏",
+      "前6周不要沉迷花哨特效",
+      "先拍稳、剪顺、调统一，再谈风格化"
+    ]
+  }
 }
